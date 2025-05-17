@@ -1,15 +1,48 @@
+````markdown
 # video_codec_plugin
 
-A new Flutter plugin project.
+A Flutter plugin to detect the codec of a video file on iOS.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/to/develop-plugins),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+- Detects the video codec (e.g., `avc1`, `hvc1`, etc.) from a local video file.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Installation
+
+Add this to your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  video_codec_plugin: ^1.0.1
+````
+
+Then run:
+
+```bash
+flutter pub get
+```
+
+## Usage
+
+```dart
+import 'package:video_codec_plugin/video_codec_plugin.dart';
+
+final plugin = VideoCodecPlugin();
+
+Future<void> detectCodec(String filePath) async {
+  final codec = await plugin.detectVideoCodec(filePath);
+  print('Detected codec: $codec');
+}
+```
+
+## Platform Support
+
+* ✅ iOS
+* 🚫 Android (not yet supported)
+
+## License
+
+MIT
+
+```
 
