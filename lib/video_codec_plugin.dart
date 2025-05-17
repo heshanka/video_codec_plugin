@@ -1,8 +1,20 @@
 
-import 'video_codec_plugin_platform_interface.dart';
+import 'package:flutter/services.dart';
 
 class VideoCodecPlugin {
-  Future<String?> getPlatformVersion() {
-    return VideoCodecPluginPlatform.instance.getPlatformVersion();
+  static const MethodChannel _channel = MethodChannel('video_codec_plugin');
+
+  Future<String?> detectVideoCodec(String videoUrl) async {
+    String cleanedUrl = videoUrl.replaceAll(RegExp(r'\?+$'), '');
+
+    try {
+      final String result = await _channel.invokeMethod(
+        'detectVideoCodec',
+        {'url': cleanedUrl},
+      );
+      return result;
+    } on PlatformException catch (e) {
+      return 'Error: ${e.message}';
+    }
   }
 }
