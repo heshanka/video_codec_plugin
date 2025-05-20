@@ -12,7 +12,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  video_codec_plugin: ^1.0.1
+  video_codec_plugin: ^1.1.0
 ````
 
 Then run:
@@ -37,7 +37,7 @@ Future<void> detectCodec(String filePath) async {
 ## Platform Support
 
 * ✅ iOS
-* 🚫 Android (not yet supported)
+* ✅  Android (not yet supported)
 
 ## License
 
