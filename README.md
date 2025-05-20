@@ -1,4 +1,3 @@
-````markdown
 # video_codec_plugin
 
 A Flutter plugin to detect the codec of a video file on iOS.
@@ -43,6 +42,4 @@ Future<void> detectCodec(String filePath) async {
 ## License
 
 MIT
-
-```
 
