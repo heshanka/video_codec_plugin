@@ -1,6 +1,6 @@
 name: video_codec_plugin
 description: A Flutter plugin to detect video codec from local files on iOS.
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/heshanka/video_codec_plugin
 repository: https://github.com/heshanka/video_codec_plugin
 
