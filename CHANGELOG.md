@@ -16,4 +16,8 @@
 
 ## 1.1.0
 
-* Added Android support
+* Added Android support.
+
+## 1.1.1
+
+* Updated readme.

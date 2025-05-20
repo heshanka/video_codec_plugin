@@ -1,6 +1,6 @@
 # video_codec_plugin
 
-A Flutter plugin to detect the codec of a video file on iOS.
+A Flutter plugin to detect the codec of a video file on Android and iOS.
 
 ## Features
 
