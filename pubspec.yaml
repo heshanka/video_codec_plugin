@@ -9,6 +9,9 @@ flutter:
     platforms:
       ios:
         pluginClass: VideoCodecPlugin
+      android:
+        package: com.example.video_codec_plugin
+        pluginClass: VideoCodecPlugin   
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
