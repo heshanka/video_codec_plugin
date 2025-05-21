@@ -37,7 +37,7 @@ Future<void> detectCodec(String filePath) async {
 ## Platform Support
 
 * ✅ iOS
-* ✅  Android (not yet supported)
+* ✅  Android
 
 ## License
 

@@ -21,3 +21,7 @@
 ## 1.1.1
 
 * Updated readme.
+
+## 1.1.2
+
+* Fixed readme.
