@@ -25,3 +25,7 @@
 ## 1.1.2
 
 * Fixed readme.
+
+## 1.1.3
+
+* Added Swift Package Manager support.
